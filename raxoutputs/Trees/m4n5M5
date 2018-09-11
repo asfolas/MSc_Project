@@ -1,0 +1,121 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=19;
+	taxlabels
+	1[&!name="Desmoohyllum dianthus"]
+	10[&!name="Javania cailleti"]
+	11[&!name="Javania nov"]
+	12[&!name="Desmophyllum dianthus"]
+	13[&!name="Javania pseudoalabastra"]
+	14[&!name="Flabellum impensum"]
+	15[&!name="Flabellum areum"]
+	16[&!name="Flabellum flexuosom"]
+	17[&!name="Caryophyllia antarctica"]
+	18[&!name="Flabellum curvatum"]
+	2[&!name="Lophelia pertusa"]
+	20[&!name="Caryophyllia antarctica"]
+	21[&!name="Lophelia pertusa"]
+	3[&!name="Madrepora oculata"]
+	5[&!name="Javania antarctica"]
+	6[&!name="Solenosmilia"]
+	7[&!name="Solenosmilia"]
+	8[&!name="Enallopsammia rostrata"]
+	9[&!name="Javania pseudoalabastra"]
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ((10:0.24506,(11:0.111386,((17[&!rotate=true]:0.009242,20[&!rotate=true]:0.004318)[&bv=77,!rotate=true]:0.100302,(((18[&!rotate=true]:0.002355,15[&!rotate=true]:0.001595)[&bv=57,!rotate=true]:1.0E-6,16[&!rotate=true]:0.004015)[&bv=77,!rotate=true]:0.001985,14[&!rotate=true]:0.005728)[&bv=94,!rotate=true]:0.095909)[&bv=35,!rotate=true]:0.203683)[&bv=7]:0.066459)[&bv=36]:0.121688,((5:1.0E-6,6:1.0E-6)[&bv=8]:0.014974,(1:0.002669,(21:0.027793,(13:0.015011,((((3:1.0E-6,9:1.0E-6)[&bv=21]:1.0E-6,8:1.0E-6)[&bv=25]:0.043308,2:1.0E-6)[&bv=17]:0.057195,12:0.015879)[&bv=7]:1.0E-6)[&bv=5]:0.005857)[&bv=7]:0.005435)[&bv=17]:0.10547)[&bv=21]:0.089577,7:1.0E-6);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="bv";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute=null;
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute=null;
+	set nodeShapeInternal.colourAttribute=null;
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
